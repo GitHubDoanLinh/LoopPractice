@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Nhập vào nhiệt độ từ 20 => 100°C</h3>
+<button onclick="f()"> Start</button>
+</body>
+<script>
+    function f()
+    {
+        let temp = prompt("Nhập vào nhiệt độ ")
+        if(temp<20)
+        {
+            alert("lạnh quá, hãy tăng nhiệt độ lên !")
+            f();
+        }
+        else if(temp>100)
+        {
+            alert("Nóng quá, hãy giảm nhiệt độ xuống !")
+            f();
+        }
+        else {
+            alert("Nhiệt độ đã thỏa mãn điều kiện.")
+        }
+    }
+</script>
+
+</html>
