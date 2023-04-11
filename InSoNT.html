@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h3>Chương trình xuất ra các số nguyên tố từ 1 => n</h3>
+<button onclick="doing()">Bắt đầu</button>
+</body>
+<script>
+  function doing() {
+    let n = parseInt(prompt('Nhập vào số n : '));
+    document.write("các số nguyên tố từ 1 => "+n+ " là <br>" )
+    for (let i = 1 ; i <= n; i++)
+    {
+      let flag = 0;
+
+      for (let j = 2; j < i; j++)
+      {
+        if (i % j == 0)
+        {
+          flag = 1;
+          break;
+        }
+      }
+
+      // if number greater than 1 and not divisible by other numbers
+      if (i > 1 && flag == 0)
+      {
+        //console.log(i);
+        document.write(i+"<br>");
+      }
+    }
+  }
+</script>
+</html>
