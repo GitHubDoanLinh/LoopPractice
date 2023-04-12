@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    document.write("20 số nguyên tố đầu tiên là : <br>")
+    for (let i = 1; i <= 72; i++)
+    {
+        let flag = true;
+        for (let j = 2; j < i; j++)
+        {
+            if (i % j == 0) {
+                flag = false;
+                break;
+            }
+        }
+        if (i > 1 && flag == true)
+        {
+            document.write(i+"<br>")
+        }
+    }
+
+</script>
